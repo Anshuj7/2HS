@@ -11,11 +11,11 @@
 This website is made for giving the users the most relaxing experience of nature and binaural sounds. In life, any work can bring you stress and anxiety which could lead to some serious health issues. So, use our project..relax..listen and enjoy the beautiful feelings.
 
 ### Front-End Technologies Used
-HTML5
-CSS3
-JavaScript
+* HTML5
+* CSS3
+* JavaScript
                   
  ### Credits
-MailBox Drive
-Nomadic Ambience
-RainyDay.js
+* MailBox Drive
+* Nomadic Ambience
+* RainyDay.js
