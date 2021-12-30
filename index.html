@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" size="32x32">
+
+    <title>2 Hour Sessions | Rain in my city</title>
+</head>
+<body></body>    
+        <section>
+                <header>
+                    <a href="#" class="logo">2HS</a>
+                    <div class="toggle" onclick="toggleMenu()"></div>
+                    <ul class="navigation">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </header>
+        </section>
+
+        <!-- FOR AUDIO BAR -->
+        <div class="container-audio" style="z-index: auto;">
+            <audio controls autoplay loop>
+                <source src="https://www.mboxdrive.com/city-rain.mp3" type="audio/mpeg">
+                
+            </audio>
+        </div>
+
+    <!-- FOR MAIN CONTAINER -->
+
+        <div class="container">
+            <img id="background" alt="background" src="" style=" z-index: -1;"/>
+        </div>
+        
+    <script src="assets/js/rainyday.js"></script>
+        <script>
+            function rain(){
+                const image = document.getElementById('background');
+                image.onload = function() {
+                    var rainyDay = new RainyDay({
+                        image: this,
+                        fps: 60,
+                        gravityThreshold: 5,
+                        enableCollisions: true,
+                        enableSizeChange: true
+                    })
+                    RainyDay.rain([[8, 15, 0.9], [6, 2, 1]
+                    ],0)
+                }
+                image.src = 'assets/img/rain.jpg';
+            } 
+            rain();
+        </script>
+</body>
+</html>

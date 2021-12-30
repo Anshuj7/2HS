@@ -1,0 +1,98 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 100;
+
+}
+
+header .logo{
+    transition: 0.25s;
+    font-family: 'Gugi';
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.chkbx{
+    display: none;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+    height: 28px;
+}
+
+header .navigation li{
+    list-style: none;
+}
+
+header .navigation li a{
+    display: inline-block;
+    color: #fff;
+    font-family: 'poppins';
+    font-weight:lighter;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navigation a:hover{
+    border-bottom: 1px solid #aaa;
+}
+
+
+body{
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 200%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Start  styling the page */
+ .container-audio {
+    width: 66%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    transform: translate(35%);
+    margin: 20px auto;
+    z-index: 10;
+}
+audio {
+  width:70%;
+}
