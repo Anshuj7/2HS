@@ -19,3 +19,6 @@ This website is made for giving the users the most relaxing experience of nature
 * MailBox Drive
 * Nomadic Ambience
 * RainyDay.js
+
+### Visit the site here
+https://2hs.netlify.app/
